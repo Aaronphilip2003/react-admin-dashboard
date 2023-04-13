@@ -12,16 +12,12 @@ import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
-import Iframe from 'react-iframe';
-const Dashboard = () => {
+import Iframe from "react-iframe";
+const Newsletter = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
-  return (
-    <div>
-      hello
-    </div>
-  );
+  return <div>hello</div>;
 };
 
-export default Dashboard;
+export default Newsletter;
