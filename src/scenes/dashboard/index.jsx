@@ -1,25 +1,47 @@
 import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { mockTransactions } from "../../data/mockData";
-import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
-import EmailIcon from "@mui/icons-material/Email";
-import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
-import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import TrafficIcon from "@mui/icons-material/Traffic";
 import Header from "../../components/Header";
-import LineChart from "../../components/LineChart";
-import GeographyChart from "../../components/GeographyChart";
-import BarChart from "../../components/BarChart";
-import StatBox from "../../components/StatBox";
-import ProgressCircle from "../../components/ProgressCircle";
-import Iframe from 'react-iframe';
+import Card from "../../components/Card";
+
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
   return (
     <div>
-      hello
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <Card
+          title="Card 1"
+          description="Some content goes here."
+          image="https://via.placeholder.com/150"
+        />
+        <Card
+          title="Card 2"
+          description="Some content goes here."
+          image="https://via.placeholder.com/150"
+        />
+        <Card
+          title="Card 3"
+          description="Some content goes here."
+          image="https://via.placeholder.com/150"
+        />
+        <Card
+          title="Card 4"
+          description="Some content goes here."
+          image="https://via.placeholder.com/150"
+        />
+        <Card
+          title="Card 5"
+          description="Some content goes here."
+          image="https://via.placeholder.com/150"
+        />
+        <Card
+          title="Card 6"
+          description="Some content goes here."
+          image="https://via.placeholder.com/150"
+        />
+      </div>
     </div>
   );
 };
